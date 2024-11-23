@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bingo do Max</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Delius+Unicase:wght@400;700&&display=swap"
+            rel="stylesheet"
+        />
+        <link href="bootstrap.min.css" rel="stylesheet" />
+        <link href="styles.css" rel="stylesheet" />
+        <script src="jquery-3.7.1.min.js.js"></script>
+        <script src="lista.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body class="h-100" onload="iniciar()">
+        <div class="position-fixed top-0 start-0 w-100 mt-3 d-flex justify-content-center">
+            <img src="ursinho.png" class="ursinho mx-3" ><h1 class="display-3 text-center leckerli-one-regular">Bingo do Max</h1><img src="ursinho.png" class="ursinho mx-3" >
+        </div>
+        <div class="h-100">
+            <div class="w-100 h-100 text-center d-flex justify-content-center align-items-center display-1 delius-unicase-bold" id="resultado">INICIAR</div>
+            <div class="position-fixed top-0 end-0 p-3 h-100 d-flex flex-column justify-content-start" id="sorteados"></div>
+        </div>
+        <div class="position-fixed bottom-0 start-0 w-100 d-flex justify-content-between p-3">
+            <button onclick="iniciar()" class="btn btn-primary btn-lg">Reiniciar</button>
+            <button id="sortear" onclick="sortear()" class="btn btn-success btn-lg"> Sortear</button>
+        </div>
+    </body>
+</html>
